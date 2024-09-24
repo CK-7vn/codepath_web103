@@ -1,0 +1,31 @@
+<!DOCTYPE htm>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <h1>Programming languages of days now, and days past!</h1>
+        </div>
+    </header>
+    <main class="container">
+        <div id="languageCards" class="grid"></div>
+    </main>
+    <dialog id="modal">
+        <article>
+            <header>
+                <a href="#close" aria-label="Close" class="close" data-target="modal" onClick="closeModal()"></a>
+                <h3 id="modalTitle"></h3>
+            </header>
+            <div id="modalContent"></div>
+        </article>
+    </dialog>
+    <script type="module" src="/scripts/main.js"></script>
+</body>
+</html>
